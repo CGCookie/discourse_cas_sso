@@ -8,8 +8,12 @@ class LoginController < ApplicationController
   end
 
   def create
-    username = request.env["omniauth.auth"][:uid]
+
+    Rails.logger.debug request.env["omniauth.auth"]
+
     email = request.env["omniauth.auth"][configatron.cas.attributes_hash][configatron.cas.email_attribute]
+    # username = request.env["omniauth.auth"][:uid]
+    username = email
     
     if request.env["omniauth.auth"][configatron.cas.attributes_hash][configatron.cas.name_attribute]
       name = request.env["omniauth.auth"][configatron.cas.attributes_hash][configatron.cas.name_attribute].split(',').reverse.each { |x| x.strip }.join(' ')
