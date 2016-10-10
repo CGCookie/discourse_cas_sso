@@ -8,7 +8,7 @@
                                                       #
                                                       #   configatron.file.storage = :s3
 
-configatron.sso.login.path = 'https://auth.cgcookie.com/'
+configatron.sso.login.path = '/login'
 configatron.sso.secret = 'Ujo3Zf7JucsVFQHQeQsCZbPvUGbn'
 
 configatron.sso.suppress_welcome_message = false
@@ -27,9 +27,9 @@ configatron.cas.avatar_force_update_attribute = false  # Discourse parameter spe
 
 configatron.custom_field.username = false
 
-configatron.filter_by_groups = true
+configatron.filter_by_groups = false
 configatron.sso.groups.name = 'Groups'
-configatron.sso.groups.allow = true
+configatron.sso.groups.allow = false
 configatron.sso.groups.deny  = false
 configatron.sso.groups.allow_list = 'CN=All Staff,OU=DLs,DC=evergreen,DC=edu|CN=All Faculty,OU=DLs,DC=evergreen,DC=edu|CN=All Students,OU=DLs,DC=evergreen,DC=edu|CN=High Security Users and Groups,DC=evergreen,DC=edu|CN=commons_admins,OU=Academic Computing Groups,OU=Groups,DC=evergreen,DC=edu'
 configatron.sso.groups.deny_list  = 'CN=staff,OU=Groups,DC=example,DC=edu|CN=students,OU=Groups,DC=example,DC=edu|CN=faculty,OU=Groups,DC=example,DC=edu'
