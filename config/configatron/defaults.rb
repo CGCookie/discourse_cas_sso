@@ -8,13 +8,13 @@
                                                       #
                                                       #   configatron.file.storage = :s3
 
-configatron.sso.login.path = '/session/sso_login'
-configatron.sso.secret = 'ToTX`#TLy@ioR^exPKb@&sfyD'
+configatron.sso.login.path = 'https://auth.cgcookie.com/'
+configatron.sso.secret = 'Ujo3Zf7JucsVFQHQeQsCZbPvUGbn'
 
 configatron.sso.suppress_welcome_message = false
 
-configatron.cas.email_attribute = 'UserPrincipalName'    # CAS attribute containing user's e-mail. Example: 'UserPrincipalName'
-configatron.cas.name_attribute = 'Name' # CAS attribute containing user's username. Example: 'Name'
+configatron.cas.email_attribute = 'email'    # CAS attribute containing user's e-mail. Example: 'UserPrincipalName'
+configatron.cas.name_attribute = 'name' # CAS attribute containing user's username. Example: 'Name'
 
 configatron.cas.attributes_hash = :extra #in some small about a of cases this may be :info
 
